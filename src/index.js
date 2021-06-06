@@ -24,6 +24,7 @@ class App extends Component {
         <Box
           quote={this.state.displayQuote.quote}
           author={this.state.displayQuote.author}
+          nextQuote={this.getRandomQuote}
         />
       </div>
     );
