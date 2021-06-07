@@ -1,3 +1,5 @@
+$base-color: #ffc421;
+
 #quote-box {
   background-color: gray;
   width: 50%;
@@ -37,11 +39,12 @@
       cursor: pointer;
       font-size: 20px;
       letter-spacing: 5px;
-      background: #ffc421;
+      background: $base-color;
       border: 2px solid black;
       box-shadow: 0px 0px 0px rgba(0,0,0,0.4);
       transition: 500ms;
       padding: 0;
+      border-radius: 10px;
 
   }
   
@@ -64,7 +67,7 @@
   
   button:hover:after {
       background: white;
-      box-shadow: 0px 0px 20px #ffc421, 0px 0px 30px #ffc421, inset 0px 0px 10px #ffc421;
+      box-shadow: 0px 0px 20px $base-color, 0px 0px 30px $base-color, inset 0px 0px 10px $base-color;
       animation: spin 1s infinite linear;
   }
   

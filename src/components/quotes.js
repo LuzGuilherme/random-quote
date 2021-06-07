@@ -1,4 +1,5 @@
 import React from "react";
+import "./app.scss"
 
 const quotesArr = [
     {
@@ -18,6 +19,10 @@ const quotesArr = [
 const RandomQuote = () => {
     let randomIndex = Math.floor(Math.random() * quotesArr.length);
     return quotesArr[randomIndex];
+}
+
+const RandomColor = () =>{
+
 }
 
 export default RandomQuote;
