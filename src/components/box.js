@@ -18,7 +18,7 @@ const Box = ({ quote, author, nextQuote, nextColor }) => {
         New Quote
       </button> <br></br>
       <a>
-          <img ></img>
+          <img src={require('./icons/twitter.png')}></img>
       </a>
     </div>
   );
