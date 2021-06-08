@@ -1,4 +1,8 @@
-$base-color: #ffc421;
+//$base-color: #ffc421;
+
+:root {
+    --base-color: #ffc421;
+}
 
 #quote-box {
   background-color: gray;
@@ -39,7 +43,7 @@ $base-color: #ffc421;
       cursor: pointer;
       font-size: 20px;
       letter-spacing: 5px;
-      background: $base-color;
+      background: var(--base-color);
       border: 2px solid black;
       box-shadow: 0px 0px 0px rgba(0,0,0,0.4);
       transition: 500ms;
@@ -67,7 +71,7 @@ $base-color: #ffc421;
   
   button:hover:after {
       background: white;
-      box-shadow: 0px 0px 20px $base-color, 0px 0px 30px $base-color, inset 0px 0px 10px $base-color;
+      box-shadow: 0px 0px 20px var(--base-color), 0px 0px 30px var(--base-color), inset 0px 0px 10px var(--base-color);
       animation: spin 1s infinite linear;
   }
   

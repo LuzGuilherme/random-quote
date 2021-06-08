@@ -21,8 +21,4 @@ const RandomQuote = () => {
     return quotesArr[randomIndex];
 }
 
-const RandomColor = () =>{
-
-}
-
 export default RandomQuote;
