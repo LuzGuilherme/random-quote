@@ -2,6 +2,7 @@ import { Component } from "react";
 import ReactDOM from "react-dom";
 import Box from "./components/box";
 import RandomQuote from "./components/quotes";
+import Icons from "./components/icons";
 
 class App extends Component {
   state = {
@@ -51,6 +52,7 @@ class App extends Component {
           nextQuote={this.getRandomQuote}
           nextColor={this.getRandomColor}
         />
+        <Icons/>
       </div>
     );
   }

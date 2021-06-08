@@ -1,7 +1,8 @@
 import React from "react";
 import "./app.scss";
 
-const Box = ({ quote, author, nextQuote, nextColor }) => {
+
+const Box = ({ quote, author, nextQuote, nextColor}) => {
   return (
     <div id="quote-box">
       <div id="quote-text">
@@ -17,9 +18,6 @@ const Box = ({ quote, author, nextQuote, nextColor }) => {
       >
         New Quote
       </button> <br></br>
-      <a>
-          <img src={require('./icons/twitter.png')}></img>
-      </a>
     </div>
   );
 };
