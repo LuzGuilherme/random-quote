@@ -1,10 +1,12 @@
 import React from "react";
 
-const Icons =()=> {
+const Icons =({quote, author})=> {
+
+    let link = "https://twitter.com/intent/tweet?text=" + quote + " - " + author;
 
     return (
         <div>
-            <a id="tweet-quote" title="Tweet this quote!" href="twitter.com/intent/tweet" target="_top">
+            <a id="tweet-quote" title="Tweet this quote!" href={link} target="_blank">
                 <img src="/twitter.png" alt="Twitter icon"></img>
             </a>
         </div>

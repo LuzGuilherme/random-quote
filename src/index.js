@@ -52,7 +52,10 @@ class App extends Component {
           nextQuote={this.getRandomQuote}
           nextColor={this.getRandomColor}
         />
-        <Icons/>
+        <Icons
+          quote={this.state.displayQuote.quote}
+          author={this.state.displayQuote.author}
+        />
       </div>
     );
   }
