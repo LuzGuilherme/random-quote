@@ -7,7 +7,7 @@ const Icons =({quote, author})=> {
     return (
         <div>
             <a id="tweet-quote" title="Tweet this quote!" href={link} target="_blank">
-                <img src="/twitter.png" alt="Twitter icon"></img>
+                <img src= {process.env.PUBLIC_URL + "/twitter.png"} alt="Twitter icon"></img>
             </a>
         </div>
     )
